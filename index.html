@@ -24,8 +24,129 @@ git status<!DOCTYPE html>
     </nav>
     <div class="header-text">
         <p>Software developper</p>
-        <h1>Bonjour, Je suis Esther une Apprentie developpeuse en Alternance</h1>
+        <h1>Bonjour, Je suis <span>Esther</span><br> une Apprentie developpeuse en Alternance</h1>
     </div>
+
+<!--about me-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="#imageaboutme"
+                </div>
+                <div class="about-col-2"></div>
+                    <h1 class="sub-tittle">About me</h1>
+                    <p> petit Texte a propos de moi et de mon parcours</p>
+
+                    <div class="tab-tittles"></div>
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills"></div>
+            <ul>
+                <li><span>Web  Developpement</span><br>Developpement d'applicatio net site web</li>
+                <li><span>App Developpement</span><br>Developpement d'applicatio net site web</li>
+            </ul>
+            <div class="tab-contents" id="experience"></div>
+            <ul>
+                <li><span>2021-2023</span><br>Apprentie Administratrice réseau</li>
+            
+            </ul>
+            <div class="tab-contents" id="education"></div>
+            <ul>
+                <li><span>2023</span><br>BTS SIO Option SLAM</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!--Réalisation personnelles-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">Réalisations personnelles</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="#mettre image d'un projet(et plus si projet perso fini entre temps">
+                    <div class="layer"> 
+                        <h3>Launcher de jeux</h3>
+                        <p>Launcher de jeu contenant des petits jeux fait par  mon équipe et moi</p>
+                        <a href="#lien vers le git de l'appli"></a><i class="lien-externe"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="#mettre image d'un projet(et plus si projet perso fini entre temps">
+                    <div class="layer"> 
+                        <h3>site php</h3>
+                        <p>Launcher de jeu contenant des petits jeux fait par  mon équipe et moi</p>
+                        <a href="#lien vers le git de l'appli"></a><i class="lien-externe"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="#mettre image d'un projet(et plus si projet perso fini entre temps">
+                    <div class="layer"> 
+                        <h3>chess game</h3>
+                        <p>Launcher de jeu contenant des petits jeux fait par  mon équipe et moi</p>
+                        <a href="#lien vers le git de l'appli"></a><i class="lien-externe"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">Voir plus de projet</a>
+        </div>
+    </div>
+
+    <!--Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contactez Moi</h1>
+                    <p><i class="fas fa-paper-plane"></i>esther.mehal@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0760888094</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#CV" download="" class="button button2">TelchargeZ MON cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required >
+                        <input type="email" name="email" placeholder="Your email" required >
+                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Code pour faire disparaitre les blocks actuellemeent afficher pour faire apparaitre celui sur lequel on vient de cliquer-->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tablinks = document.getElementsByClassName("tab-contents");
+        
+        
+        function opentab(tabname){
+            for(tablinks of tablinks){
+                tablinks.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
     
 </body>
 </html>
