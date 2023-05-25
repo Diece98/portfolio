@@ -1062,6 +1062,8 @@ input {
 	width: 800px;
 	margin: 30px auto;
 	position: relative;
+	
+
 }
 
 .slider-viewport {
@@ -1086,8 +1088,11 @@ input {
 	position: absolute;
 	width: 100%;
 	bottom: -30px;
-	margin-top: 10px;
+	margin-top: 30px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 .slider-nav a {
@@ -1164,8 +1169,8 @@ input#hide:checked~span#content {
 	border-radius: 5px;
 	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
 	align-items: center;
-	margin: auto;
-	max-width: 40%;
+	margin: 20px auto;
+	max-width: 50%;
 }
 
 .wrapper header {
@@ -1176,7 +1181,7 @@ input#hide:checked~span#content {
 }
 
 .wrapper form {
-	margin: 35px 30px;
+	margin: 20px 15px;
 }
 
 .wrapper form.disabled {
