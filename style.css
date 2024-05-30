@@ -429,7 +429,7 @@ a {
 }
 
 #projects .projects-header h1 {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 #projects .all-projects {
@@ -539,7 +539,7 @@ a {
 	background: #fff;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+
 	min-height: 100vh;
 	width: auto;
 	display: flex;
@@ -598,7 +598,7 @@ input {
 	right: 20px;
 	bottom: 0;
 	border-radius: 15px;
-	box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+
 	z-index: -1;
 }
 
@@ -1097,7 +1097,7 @@ input {
 
 .slider-nav a {
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
-	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+
 	display: inline-block;
 	background-color: #adafbc;
 	width: 15px;
@@ -1338,11 +1338,12 @@ form .button-area {
 
 .fa {
 	padding: 20px;
-	font-size: 30px;
-	width: 50px;
+	font-size: 140px;
+	width: 100px;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
+
 }
 
 
@@ -1356,10 +1357,36 @@ form .button-area {
 .fa-linkedin {
 	background: #3B5998;
 	color: white;
+
 }
 
 /* Twitter */
 .fa-github {
 	background: #303031;
 	color: white;
+
+}
+
+#Entreprise {
+	line-height: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#Entreprise .Entreprise-header {
+	max-width: 1000px;
+
+}
+
+#Entreprise .section-title {
+	font-size: 3em;
+
+}
+
+#Entreprise p {
+	font-size: 3em;
+	line-height: 1;
+
 }
